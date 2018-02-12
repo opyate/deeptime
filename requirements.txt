@@ -1,0 +1,7 @@
+tqdm
+faker
+babel
+matplotlib
+keras
+h5py
+pytest

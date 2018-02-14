@@ -1,8 +1,6 @@
 from wordstime import wordstime
 import datetime as dt
 
-
-
 def test_wordstime():
     assert wordstime(dt.time(0,0,0)) == "midnight"
     assert wordstime(dt.time(1,0,0)) == "one o'clock in the morning"
@@ -39,4 +37,4 @@ def test_wordstime():
     assert wordstime(dt.time(12,30,59)) == "twenty nine minutes and one second to one o'clock in the afternoon"
     assert wordstime(dt.time(12,31,0)) == "twenty nine minutes to one o'clock in the afternoon"
 
-
+    assert wordstime(dt.time(11, 53, 33)) == "six minutes and twenty seven seconds to noon"

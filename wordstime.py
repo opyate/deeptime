@@ -1,4 +1,3 @@
-
 NUM=[
     "zero",
     "one", "two", "three", "four", "five", "six", "seven", "eight","nine",
@@ -54,7 +53,6 @@ HOUR = [
     "midnight"
 ]
 
-
 def wordstime(dd):
     try:
         h = dd.hour
@@ -76,6 +74,8 @@ def wordstime(dd):
         place = "past"
         if m > 30:
             mm = NUM[60 - m]
+            if s != 0:
+                mm = NUM[60 - m - 1]
             ss = NUM[60 - s]
             hh = HOUR[h + 1]
             place = "to"
@@ -118,3 +118,5 @@ def wordstime(dd):
 
     except Exception as e:
         raise Exception('error from {}'.format(dd)) from e
+
+

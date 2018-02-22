@@ -13,6 +13,8 @@
 
 Going beyond the encoder-decoder architectures of RNNs, I'm experimenting with the attention model.
 
+The [original paper](https://arxiv.org/abs/1409.0473) by Bahdanau et al is quite interesting, and attention seems to be [all the rage](https://twitter.com/karpathy/status/966008142940131328) right now.
+
 This experiment takes as input an English sentence `five minutes and seven seconds past noon` and predicts the time `12:05:07`.
 
 # Implementation
